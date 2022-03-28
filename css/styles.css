@@ -4,39 +4,58 @@
   --accent-color: #2196f3;
   --primary-bg-color: #e5e5e5;
   --primary-white-color: #ffffff;
+  --white-alpha-color: rgba(255, 255, 255, 0.6);
+  --secondary-bg-color: #2f303a;
+  --staff-bg-color: #f5f4fa;
 }
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
 }
 .list {
   list-style: none;
 }
 
+/* Logo */
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
-.logo.selection {
+.logo-accent-body {
   color: var(--title-text-color);
+}
+.logo-accent-footer {
+  color: var(--primary-white-color);
 }
 
 /* Site nav */
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.site-nav .link-current {
   color: var(--accent-color);
+  text-decoration: none;
 }
-
 .contacts .link {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
-
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
@@ -44,34 +63,114 @@ body {
 
 /* Hero */
 .hero-title {
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero {
+  background-color: var(--secondary-bg-color);
 }
 
 /* Section */
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Feature */
+.feature .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.feature .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Staff */
-.staff-list .title {
+.staff .title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.staff .position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.section .staff {
+  background-color: var(--staff-bg-color);
 }
 
 /* Button */
 .button-order {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+.contacts-list .link {
+  color: var(--white-alpha-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.contacts-list .link-alpha {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 /* Portfolio */
 .button .service {
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
+
 .button .service:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 .projects .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects .view {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
