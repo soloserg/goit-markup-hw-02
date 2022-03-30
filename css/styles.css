@@ -7,10 +7,10 @@
   --white-alpha-color: rgba(255, 255, 255, 0.6);
   --secondary-bg-color: #2f303a;
   --staff-bg-color: #f5f4fa;
+  --second-accent-color: #188ce8;
 }
 
 body {
-  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
@@ -51,10 +51,18 @@ body {
 .site-nav .link-current {
   color: var(--accent-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contacts .link {
   color: var(--primary-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -69,6 +77,7 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero {
   background-color: var(--secondary-bg-color);
@@ -91,6 +100,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .feature .text {
@@ -113,7 +123,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.section .staff {
+.section-staff {
   background-color: var(--staff-bg-color);
 }
 
@@ -125,6 +135,10 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--second-accent-color);
 }
 
 /* Footer */
@@ -162,15 +176,21 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.projects .title {
+.about .link {
+  text-decoration: none;
+}
+.link .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
-.projects .view {
+.link .view {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
